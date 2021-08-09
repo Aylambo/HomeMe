@@ -1,0 +1,487 @@
+.stay-app {
+    margin-top: 200px;
+
+
+}
+
+.appp {
+    // display: none;
+    grid-column: 1 / -1;
+}
+    .react-datepicker__tab-loop {
+        position: fixed;
+    }
+
+    .main-header {
+        z-index: 50;
+        height: 80px;
+        // background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        // box-shadow: 0 10px 10px -10px rgb(33 35 38 / 10%);
+
+        &.active {
+            // background-color: transparent;
+            background-color: white;
+            visibility: visible;
+            transition: all 0.2s;
+        }
+
+        &.hidden {
+            visibility: hidden;
+            transition: all 0.2s;
+            transform: translateY(-100%)
+        }
+
+        &.no-bcg {
+            background-color: transparent;
+
+        }
+
+        .header-expends {
+            flex-direction: column;
+
+            .nav-container {
+                z-index: 50;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            // h1 {
+            //     margin: 0;
+            // }
+
+            .logo-container {
+                .logo {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                a {
+                    // object-fit: contain;
+                    margin-top: 15px;
+                    color: #ff385c;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        height: 35px;
+                    }
+                }
+            }
+
+            // p {
+            //     max-width: 44ch;
+            //     margin: 0 0 1em;
+
+
+            // }
+
+            .hidden2 {
+                display: none;
+            }
+
+            .search-container {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                width: 10vw;
+                justify-content: flex-end;
+                max-width: fit-content;
+                padding: 10px;
+                // height: 30px;
+                border: 1px solid lightgray;
+                border-radius: 999px;
+                cursor: pointer;
+
+                .navbar-search-btn {
+                    border: none;
+                    outline: none;
+                    pointer-events: none;
+                    padding-left: 18px;
+                    width: 300px;
+                    font-size: 18px;
+                    // ._1xq16jy:focus-within {
+                    //     border: none ;
+                    // }
+
+                    input {
+                        color: #717171 !important;
+
+                    }
+
+                }
+
+                span {
+                    cursor: pointer;
+                    border: none;
+                    // color: #ff385c;
+                    max-width: 12vw;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+
+                svg {
+                    border-radius: 50%;
+                    background-color: #ff385c;
+                    color: white;
+                    padding: 7px;
+                    margin: -4px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .header-nav {
+                align-items: center;
+                justify-content: space-between;
+
+                &>*:not(:last-child) {
+                    margin-inline-end: 10px;
+                }
+
+                .explore {
+
+                    .wht {
+                        // color: #f7f7f7,
+                        color: black;
+                        font-weight: 0;
+                    }
+
+                    .blk {
+                        color: black;
+
+                    }
+                }
+
+                .host {
+                    .wht {
+                        color: black;
+                    }
+
+                    .blk {
+                        color: black;
+
+                    }
+                }
+
+                span {
+                    display: none;
+
+                }
+
+                a {
+                    // color: white;
+                    padding: 10px;
+                    border-radius: 2rem;
+
+                    // &:hover {
+                    //     background-color: #f7f7f7;
+                    // }
+
+                    // &.active {
+                    //     // background-color: #f7f7f7;
+                    //     // border-bottom: 1px solid white;
+                    // }
+                }
+
+                .avatar-icon {
+                    border-radius: 2rem;
+                    background-color: white;
+                    padding: 2px 2px 2px 8px;
+                    font-size: 0;
+                    border: 1px solid #dddddd;
+                    color: gray;
+
+                    &:hover {
+                        box-shadow: 0px 2px 4px rgb(0 0 0 / 18%);
+                    }
+
+                    svg {
+                        padding-inline-end: 3px;
+                        font-size: 30px;
+                    }
+
+                    img {
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: cover;
+                    }
+                }
+
+                .explor2 {
+                    display: none;
+                }
+            }
+
+            .header-fillter {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    // .btn-btn-save {
+    //     display: none !important;
+    // }
+
+    ._wtz1co2 {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        padding-bottom: 2px;
+        // color: #717171;
+    }
+
+    ._seuyf {
+
+        .checks {
+            width: 100%;
+
+            ._wtz1co {
+               width: 50%;
+                // border-right: 1px solid #DDDDDD;
+                margin-right:10px ;
+                
+            }
+
+            
+            
+        }
+
+        .home-order {
+            section {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0px;
+
+                .trip-form {
+
+                    .date-picker {
+                        width: fit-content;
+
+                        
+                        .react-datepicker__input-container {
+                            width: fit-content;
+
+                           
+                            .start-date {
+                                width: 41%;
+                                border: none;
+                                height: 100%;
+
+
+                            }
+
+                            .end-date {
+                                // display: none;
+                                width: 41%;
+                                border: none;
+                                height: 100%;
+                                margin-left:10px ;
+
+                            }
+                        }
+
+                        .react-datepicker__tab-loop {
+                            color: yellow;
+                            position: fixed;
+
+                            
+                        }
+                    }
+
+                    .guests-btn {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+    
+// }
+
+
+@media (max-width: 480px) {
+
+    .stay-app {
+        margin-top: 130px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+    }
+
+
+    .appp {
+
+        .main-header {
+            &.no-bcg {
+
+                width: 100vw;
+                margin-top: 20px
+            }
+
+            &.active {
+
+                width: 100vw;
+
+            }
+
+            .header-expends {
+
+                // width: 100vw;
+
+                .header-nav>*:not(:last-child) {
+                    margin-inline-end: 0px;
+                }
+
+                .hidden2 {
+                    display: none;
+                }
+
+                .nav-container {
+                    .header-nav {
+                        .host {
+                            display: block;
+                        }
+                    }
+                }
+
+                // .search-container {
+
+                // }
+                .main-search-bar {
+                    display: block;
+                    margin-top: 0px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+
+                    ._1l6jpwo {
+                        display: none;
+                    }
+
+                    ._37ivfdq {
+                        display: none;
+                    }
+
+                    ._1yulsurh {
+                        flex: 0 0 auto;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+// ********css for order modal ****
+
+// ._seuyf {
+//     section {
+//         display: flex;
+//         justify-content: flex-end;
+
+//         .trip-form {
+
+//             .date-picker {
+//                 display: flex;
+//                 -webkit-flex: 2 0 0%;
+//                 -ms-flex: 2 0 0%;
+//                 flex: 2 0 0%;
+//                 min-width: 0px;
+
+//                 ._43mycv {
+//                     align-self: center;
+//                     border-right: 1px solid #DDDDDD;
+//                     -webkit-flex: 0 0 0px;
+//                     -ms-flex: 0 0 0px;
+//                     flex: 0 0 0px;
+//                     height: 32px;
+//                 }
+
+//                 .react-datepicker-wrapper {
+
+//                     align-items: center;
+//                     display: flex;
+//                     -webkit-flex: 1 0 0%;
+//                     -ms-flex: 1 0 0%;
+//                     flex: 1 0 0%;
+//                     margin: -1px;
+//                     min-width: 0px;
+//                     position: relative;
+
+//                     .react-datepicker__input-container {
+//                         width: fit-content;
+//                         -webkit-appearance: none;
+//                         appearance: none;
+//                         background: transparent;
+//                         border: 0px;
+//                         color: inherit;
+//                         cursor: pointer;
+//                         display: block;
+//                         font-family: inherit;
+//                         font-size: inherit;
+//                         font-weight: inherit;
+//                         line-height: inherit;
+//                         margin: 0px;
+//                         outline: none;
+//                         overflow: visible;
+//                         padding: 1px;
+//                         text-align: left;
+//                         text-decoration: none;
+//                         -webkit-user-select: auto;
+//                         user-select: auto;
+//                         flex: 1 0;
+//                         width: 0px;
+//                         z-index: 1;
+
+
+//                         input {}
+
+//                         .start-date {
+//                             width: fit-content;
+//                             border: none;
+//                             height: 100%;
+
+
+//                         }
+
+//                         .end-date {
+//                             // display: none;
+//                             width: fit-content;
+//                             border: none;
+//                             height: 100%;
+//                         }
+//                     }
+//                 }
+
+//                 .react-datepicker__tab-loop {
+//                     color: yellow;
+//                     position: fixed;
+
+//                     .react-datepicker-popper {}
+//                 }
+//             }
+
+//             .guests-btn {
+//                 display: none;
+//             }
+
+//         }
+//     }
+// }
